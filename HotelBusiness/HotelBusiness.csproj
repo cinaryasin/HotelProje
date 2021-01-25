@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HotelDal\HotelDal.csproj" />
-    <ProjectReference Include="..\HotelEntities\HotelEntities.csproj" />
+    
   </ItemGroup>
 
 </Project>

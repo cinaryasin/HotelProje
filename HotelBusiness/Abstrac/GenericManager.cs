@@ -7,7 +7,6 @@ namespace HotelBusiness
     public class GenericManager<T>
     {
 
-
         HotelDal.DataBaseManager<T> _db;
         public GenericManager()
         {
