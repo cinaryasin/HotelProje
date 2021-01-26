@@ -1,14 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace HotelEntities
 {
-    abstract class AEntity
+    public abstract class AEntity
     {
-        
+        [Required]
         public int Id { get; set; }
+        [Required]
         public string FirsName { get; set; }
+        [Required]
         public string LastName { get; set; }
+
+
+
+        //public int Id { get; set; }
+        //[Required]
+        //[MinLength(5)]
+        //public string FirsName { get; set; }
+
+        //public string LastName { get; set; }
     }
 }

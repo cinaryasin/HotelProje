@@ -1,13 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace HotelEntities
 {
-    public class Customer
+    public class Customer:AEntity
     {
-        public int Id { get; set; }
-        public string FirsName { get; set; }
-        public string LastName { get; set; }
+        [Required]
         public string TcNo { get; set; }
+        [Required]
         public string EMail { get; set; }
     }
 }
