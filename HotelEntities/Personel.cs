@@ -8,9 +8,9 @@ namespace HotelEntities
     public class Personel : AEntity
     {
 
-        [Required]
-        public int Salary { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Maaş Girilmedi")]
+        public int? Salary { get; set; }
+        [Required(ErrorMessage = "Adres girilmedi")]
         public string Adress { get; set; }
 
     }

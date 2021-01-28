@@ -10,7 +10,7 @@ namespace HotelBusiness
     {
 
         HotelDal.DataBaseManager<T> _db;
-        ValidationContext _context;
+        
         public GenericManager()
         {
             _db = new HotelDal.DataBaseManager<T>();
@@ -21,7 +21,7 @@ namespace HotelBusiness
             Type type = typeof(T);
             var results = new List<ValidationResult>();
             var context = new ValidationContext(entity, serviceProvider: null, items: null);
-            var isValid = Validator.TryValidateObject(entity, context, results);
+            var isValid = Validator.TryValidateObject(entity, context, results,true);
             if (!isValid)
             {
                 foreach (var validationResult in results)
